@@ -10,8 +10,8 @@ genai.configure(api_key="AIzaSyBg4akratYUCIfcexIOKvnmfvymREcjieg")
 
 # Function to convert text to Markdown format
 def to_markdown(text):
-    text = text.replace('**', '---------------------')
-    text = text.replace('*', '>>')
+    text = text.replace('**', '<br>')
+    text = text.replace('*', '<br>•')
     return textwrap.indent(text, ' ')
 
 

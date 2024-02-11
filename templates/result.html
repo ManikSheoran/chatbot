@@ -86,7 +86,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="form-group col-lg-12 col-md-6 mt-3 mt-md-0"> {% endif %} {% if bot_response %} <p class="form-control">Bot: {{ bot_response }}</p>
+            <div class="form-group col-lg-12 col-md-6 mt-3 mt-md-0"> {% endif %} {% if bot_response %} <p class="form-control">Bot: {{ bot_response | safe }}</p>
             </div> {% endif %}
           </div>
         </div>
