@@ -10,7 +10,7 @@ genai.configure(api_key="AIzaSyBg4akratYUCIfcexIOKvnmfvymREcjieg")
 
 # Function to convert text to Markdown format
 def to_markdown(text):
-    text = text.replace('•', ' ')
+    text = text.replace('**', '\n•')
     return textwrap.indent(text, ' ')
 
 
@@ -34,7 +34,7 @@ def index():
 
         # Generate chatbot response
         bot_response = chatbot_response(f'Act as an chatbot of CulturalCanvas website for West bengal tourism and '
-                                        f'artisans (vocal for local) donot reply to inrelevant queries, query = "{user_query}"')
+                                        f'artisans used for telling info or planning trips/tours (vocal for local) donot reply to inrelevant queries, query = "{user_query}"')
 
         # Format bot response
         bot_response = to_markdown(bot_response)
