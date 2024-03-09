@@ -5,7 +5,7 @@ import google.generativeai as genai
 app = Flask(__name__)
 
 # Configure Google Generative AI with your API key
-genai.configure(api_key="AIzaSyBg4akratYUCIfcexIOKvnmfvymREcjieg")
+genai.configure(api_key="AIzaSyCOXTdovHFUVvCjjqzvquF-Nil_k2ATPnw")
 
 
 # Function to convert text to Markdown format
